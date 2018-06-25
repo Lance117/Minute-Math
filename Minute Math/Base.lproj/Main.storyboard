@@ -1,0 +1,455 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="NDk-pE-V5b">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="museosansrounded-300-webfont.ttf">
+            <string>MuseoSansRounded-300</string>
+        </array>
+        <array key="museosansrounded-500-webfont.ttf">
+            <string>MuseoSansRounded-500</string>
+        </array>
+        <array key="museosansrounded-700-webfont.ttf">
+            <string>MuseoSansRounded-700</string>
+        </array>
+    </customFonts>
+    <scenes>
+        <!--Main Menu View Controller-->
+        <scene sceneID="r1e-WN-ids">
+            <objects>
+                <viewController id="NDk-pE-V5b" customClass="MainMenuViewController" customModule="Minute_Math" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="sgh-FK-qt8"/>
+                        <viewControllerLayoutGuide type="bottom" id="s1D-00-sHC"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="slh-Lh-Kb5">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="u9M-eI-mIX">
+                                <rect key="frame" x="16" y="203.5" width="343" height="260"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EdO-ov-I4R" customClass="CustomButton" customModule="Minute_Math" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="0.0" width="343" height="48"/>
+                                        <color key="backgroundColor" red="0.078431372549019607" green="0.83137254901960778" blue="0.95686274509803915" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="48" id="2up-bT-Q40"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="MuseoSansRounded-700" family="Museo Sans Rounded" pointSize="23"/>
+                                        <state key="normal" title="First Grade">
+                                            <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                            <color key="titleShadowColor" cocoaTouchSystemColor="darkTextColor"/>
+                                        </state>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                <real key="value" value="0.0"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="size" keyPath="shadowOffset">
+                                                <size key="value" width="0.0" height="0.0"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <segue destination="BYZ-38-t0r" kind="show" identifier="firstGrade" id="hGu-cI-PxH"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7ha-9x-wpe" customClass="CustomButton" customModule="Minute_Math" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="53" width="343" height="48"/>
+                                        <color key="backgroundColor" red="1" green="0.76470588235294112" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="48" id="e08-Dh-Qwj"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="MuseoSansRounded-700" family="Museo Sans Rounded" pointSize="23"/>
+                                        <state key="normal" title="Second Grade">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            <color key="titleShadowColor" red="0.0" green="0.0" blue="0.0" alpha="0.19806827910958905" colorSpace="calibratedRGB"/>
+                                        </state>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                <real key="value" value="0.0"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="size" keyPath="shadowOffset">
+                                                <size key="value" width="0.0" height="0.0"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <action selector="playFirstGrade:" destination="IY1-mS-eHT" eventType="touchUpInside" id="oAw-wh-ZKk"/>
+                                            <segue destination="BYZ-38-t0r" kind="show" identifier="secondGrade" id="RjA-do-0Ui"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7Mt-iJ-hmq" customClass="CustomButton" customModule="Minute_Math" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="106" width="343" height="48"/>
+                                        <color key="backgroundColor" red="1" green="0.58039215686274503" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="48" id="nGX-el-9J8"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="MuseoSansRounded-700" family="Museo Sans Rounded" pointSize="23"/>
+                                        <state key="normal" title="Third Grade">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            <color key="titleShadowColor" red="0.0" green="0.0" blue="0.0" alpha="0.2020815497" colorSpace="calibratedRGB"/>
+                                        </state>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                <real key="value" value="0.0"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="size" keyPath="shadowOffset">
+                                                <size key="value" width="0.0" height="0.0"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <segue destination="BYZ-38-t0r" kind="show" identifier="thirdGrade" id="NEn-d0-KYq"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fle-Zg-4rg" customClass="CustomButton" customModule="Minute_Math" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="159" width="343" height="48"/>
+                                        <color key="backgroundColor" red="0.6470588235294118" green="0.37647058823529411" blue="0.92156862745098034" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="48" id="iv0-8j-tQQ"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="MuseoSansRounded-700" family="Museo Sans Rounded" pointSize="23"/>
+                                        <state key="normal" title="Fourth Grade">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            <color key="titleShadowColor" red="0.0" green="0.0" blue="0.0" alpha="0.2020815497" colorSpace="calibratedRGB"/>
+                                        </state>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                <real key="value" value="0.0"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="size" keyPath="shadowOffset">
+                                                <size key="value" width="0.0" height="0.0"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <segue destination="BYZ-38-t0r" kind="show" identifier="fourthGrade" id="Ncw-2L-Lg2"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="W3t-UK-a23" customClass="CustomButton" customModule="Minute_Math" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="212" width="343" height="48"/>
+                                        <color key="backgroundColor" red="0.89803921568627454" green="0.23137254901960785" blue="0.23137254901960785" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="48" id="dJ3-KB-VU7"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="MuseoSansRounded-700" family="Museo Sans Rounded" pointSize="23"/>
+                                        <state key="normal" title="Fifth Grade">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            <color key="titleShadowColor" red="0.0" green="0.0" blue="0.0" alpha="0.2020815497" colorSpace="calibratedRGB"/>
+                                        </state>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                <real key="value" value="0.0"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="size" keyPath="shadowOffset">
+                                                <size key="value" width="0.0" height="0.0"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <segue destination="BYZ-38-t0r" kind="show" identifier="fifthGrade" id="EPf-xR-qO2"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="fle-Zg-4rg" firstAttribute="centerX" secondItem="u9M-eI-mIX" secondAttribute="centerX" id="06m-j6-yfp"/>
+                                    <constraint firstItem="7Mt-iJ-hmq" firstAttribute="centerX" secondItem="u9M-eI-mIX" secondAttribute="centerX" id="NJM-9J-1Xp"/>
+                                    <constraint firstItem="7ha-9x-wpe" firstAttribute="centerX" secondItem="u9M-eI-mIX" secondAttribute="centerX" id="Rft-ej-zf6"/>
+                                    <constraint firstItem="EdO-ov-I4R" firstAttribute="centerX" secondItem="u9M-eI-mIX" secondAttribute="centerX" id="kdX-iN-tpc"/>
+                                    <constraint firstItem="W3t-UK-a23" firstAttribute="centerX" secondItem="u9M-eI-mIX" secondAttribute="centerX" id="tSW-sO-Mt8"/>
+                                </constraints>
+                            </stackView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Minute Math" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="abt-CL-mDS">
+                                <rect key="frame" x="101" y="120" width="173.5" height="34.5"/>
+                                <fontDescription key="fontDescription" name="MuseoSansRounded-700" family="Museo Sans Rounded" pointSize="30"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="u9M-eI-mIX" firstAttribute="centerX" secondItem="slh-Lh-Kb5" secondAttribute="centerX" id="1Xd-GJ-FHI"/>
+                            <constraint firstItem="u9M-eI-mIX" firstAttribute="leading" secondItem="slh-Lh-Kb5" secondAttribute="leadingMargin" id="VRB-Sa-zof"/>
+                            <constraint firstItem="u9M-eI-mIX" firstAttribute="centerY" secondItem="slh-Lh-Kb5" secondAttribute="centerY" id="mFy-wK-GhS"/>
+                            <constraint firstItem="abt-CL-mDS" firstAttribute="top" secondItem="sgh-FK-qt8" secondAttribute="bottom" constant="100" id="sN6-th-R55"/>
+                            <constraint firstItem="abt-CL-mDS" firstAttribute="centerX" secondItem="slh-Lh-Kb5" secondAttribute="centerX" id="u35-Km-onY"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="u9M-eI-mIX" secondAttribute="trailing" id="zVi-n8-uuw"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ezX-Gm-bPZ" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <exit id="IY1-mS-eHT" userLabel="Exit" sceneMemberID="exit"/>
+            </objects>
+            <point key="canvasLocation" x="-535.20000000000005" y="168.6656671664168"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Minute_Math" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="o9x-jN-RJI"/>
+                        <viewControllerLayoutGuide type="bottom" id="AQX-RR-h9m"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="bDk-h9-Hrt" userLabel="Score Stack">
+                                <rect key="frame" x="16" y="35" width="43.5" height="43"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Score" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aLJ-if-vM4">
+                                        <rect key="frame" x="0.0" y="0.0" width="43.5" height="19"/>
+                                        <fontDescription key="fontDescription" name="MuseoSansRounded-300" family="Museo Sans Rounded" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5H9-82-9qB">
+                                        <rect key="frame" x="16.5" y="24" width="11" height="19"/>
+                                        <fontDescription key="fontDescription" name="MuseoSansRounded-300" family="Museo Sans Rounded" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                            </stackView>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="pdV-n7-bok" userLabel="Time Stack">
+                                <rect key="frame" x="326.5" y="35" width="32.5" height="43"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Best" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cyT-Py-qtQ">
+                                        <rect key="frame" x="0.0" y="0.0" width="32.5" height="19"/>
+                                        <fontDescription key="fontDescription" name="MuseoSansRounded-300" family="Museo Sans Rounded" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dn8-QQ-31h">
+                                        <rect key="frame" x="0.0" y="24" width="32.5" height="19"/>
+                                        <fontDescription key="fontDescription" name="MuseoSansRounded-300" family="Museo Sans Rounded" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                            </stackView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="You are correct." textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="d57-j3-4HO">
+                                <rect key="frame" x="106" y="420.5" width="163.5" height="26"/>
+                                <fontDescription key="fontDescription" name="MuseoSansRounded-500" family="Museo Sans Rounded" pointSize="23"/>
+                                <color key="textColor" red="0.24792684449999999" green="0.80659002589999995" blue="0.33040394340000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="60" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ASa-Q4-v8f">
+                                <rect key="frame" x="169.5" y="35" width="36.5" height="34"/>
+                                <fontDescription key="fontDescription" name="MuseoSansRounded-500" family="Museo Sans Rounded" pointSize="30"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" spacing="25" translatesAutoresizingMaskIntoConstraints="NO" id="Obt-Qa-RLt" userLabel="Problem Stack">
+                                <rect key="frame" x="16" y="208.5" width="343" height="108.5"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="1 + 1 = ____" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sEB-fv-Sh1">
+                                        <rect key="frame" x="0.0" y="0.0" width="343" height="33.5"/>
+                                        <fontDescription key="fontDescription" name="MuseoSansRounded-700" family="Museo Sans Rounded" pointSize="29"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Enter your answer here." textAlignment="center" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="9jh-N7-cAS">
+                                        <rect key="frame" x="0.0" y="58.5" width="343" height="50"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <color key="tintColor" cocoaTouchSystemColor="darkTextColor"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="50" id="Tb4-yS-hJr"/>
+                                        </constraints>
+                                        <nil key="textColor"/>
+                                        <fontDescription key="fontDescription" name="MuseoSansRounded-300" family="Museo Sans Rounded" pointSize="17"/>
+                                        <textInputTraits key="textInputTraits" autocorrectionType="no" keyboardType="decimalPad" returnKeyType="send"/>
+                                    </textField>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="sEB-fv-Sh1" firstAttribute="centerX" secondItem="Obt-Qa-RLt" secondAttribute="centerX" id="V6y-Dh-guj"/>
+                                    <constraint firstAttribute="trailing" secondItem="9jh-N7-cAS" secondAttribute="trailing" id="up6-qg-Ioc"/>
+                                    <constraint firstItem="9jh-N7-cAS" firstAttribute="leading" secondItem="Obt-Qa-RLt" secondAttribute="leading" id="vHq-D3-1ak"/>
+                                </constraints>
+                            </stackView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jJD-Jw-EQN" customClass="CustomButton" customModule="Minute_Math" customModuleProvider="target">
+                                <rect key="frame" x="72" y="347" width="231" height="48"/>
+                                <color key="backgroundColor" red="0.10980392156862745" green="0.69019607843137254" blue="0.96470588235294119" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="48" id="Ey6-zc-v11"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="MuseoSansRounded-700" family="Museo Sans Rounded" pointSize="23"/>
+                                <inset key="contentEdgeInsets" minX="20" minY="0.0" maxX="20" maxY="0.0"/>
+                                <state key="normal" title="SCORE SUMMARY">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" red="0.0" green="0.0" blue="0.0" alpha="0.20208154965753425" colorSpace="calibratedRGB"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="0.0"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="shadowRadius">
+                                        <real key="value" value="1"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="size" keyPath="shadowOffset">
+                                        <size key="value" width="0.0" height="0.0"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="shadowOpacity">
+                                        <real key="value" value="100"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="getScoreSummary:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Fci-cm-nIV"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XuK-Lw-12X">
+                                <rect key="frame" x="16" y="624" width="32" height="37"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="37" id="Q0l-dF-oY4"/>
+                                    <constraint firstAttribute="width" constant="32" id="RAu-jg-Zwe"/>
+                                </constraints>
+                                <state key="normal" image="refresh-icon">
+                                    <color key="titleColor" red="0.10980392156862745" green="0.69019607843137254" blue="0.96470588235294119" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="tryAgain:" destination="BYZ-38-t0r" eventType="touchUpInside" id="OV2-P5-aPN"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="v7e-XS-xPI">
+                                <rect key="frame" x="317" y="624" width="42" height="37"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="37" id="3aO-N3-tj4"/>
+                                    <constraint firstAttribute="width" constant="42" id="Lnx-9U-dg5"/>
+                                </constraints>
+                                <state key="normal" image="home-icon">
+                                    <color key="titleColor" red="0.10980392156862745" green="0.69019607843137254" blue="0.96470588235294119" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="goBackHome:" destination="BYZ-38-t0r" eventType="touchUpInside" id="VsM-ma-Fpp"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MdW-xv-gl8" customClass="CustomButton" customModule="Minute_Math" customModuleProvider="target">
+                                <rect key="frame" x="112.5" y="613" width="150" height="48"/>
+                                <color key="backgroundColor" red="0.47843137254901957" green="0.7803921568627451" blue="0.047058823529411764" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="48" id="73a-F8-icH"/>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="150" id="pDI-IB-79k"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="MuseoSansRounded-700" family="Museo Sans Rounded" pointSize="23"/>
+                                <state key="normal" title="SUBMIT">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <state key="disabled" title="SUBMIT">
+                                    <color key="titleColor" white="0.0" alpha="0.2041416952" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="24"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="submitAnswer:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Pyj-hA-DCv"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="XuK-Lw-12X" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="11A-JZ-hj3"/>
+                            <constraint firstItem="jJD-Jw-EQN" firstAttribute="top" secondItem="Obt-Qa-RLt" secondAttribute="bottom" constant="30" id="2wk-ef-pfn"/>
+                            <constraint firstItem="pdV-n7-bok" firstAttribute="top" secondItem="o9x-jN-RJI" secondAttribute="bottom" constant="15" id="3WC-Yt-zay"/>
+                            <constraint firstItem="AQX-RR-h9m" firstAttribute="top" secondItem="MdW-xv-gl8" secondAttribute="bottom" constant="6" id="AeI-cM-uqb"/>
+                            <constraint firstItem="ASa-Q4-v8f" firstAttribute="top" secondItem="o9x-jN-RJI" secondAttribute="bottom" constant="15" id="E7i-Bs-Gku"/>
+                            <constraint firstItem="d57-j3-4HO" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" constant="100" id="GPg-Ac-t8k"/>
+                            <constraint firstItem="Obt-Qa-RLt" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="GnM-c6-0Wu"/>
+                            <constraint firstItem="MdW-xv-gl8" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="JgV-A2-Nls"/>
+                            <constraint firstItem="Obt-Qa-RLt" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Jiw-c7-FUd"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="Obt-Qa-RLt" secondAttribute="trailing" id="L6U-UE-FLV"/>
+                            <constraint firstItem="ASa-Q4-v8f" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="UST-xU-xJo"/>
+                            <constraint firstItem="AQX-RR-h9m" firstAttribute="top" secondItem="XuK-Lw-12X" secondAttribute="bottom" constant="6" id="cR2-3q-MnD"/>
+                            <constraint firstItem="v7e-XS-xPI" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="fWv-Vi-aaf"/>
+                            <constraint firstItem="pdV-n7-bok" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="fty-yN-Ssu"/>
+                            <constraint firstItem="Obt-Qa-RLt" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" constant="-70.75" id="hui-fH-BpX"/>
+                            <constraint firstItem="bDk-h9-Hrt" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="mNP-zk-vrF"/>
+                            <constraint firstItem="bDk-h9-Hrt" firstAttribute="top" secondItem="o9x-jN-RJI" secondAttribute="bottom" constant="15" id="msX-Cv-7lC"/>
+                            <constraint firstItem="d57-j3-4HO" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="ni9-8P-yZz"/>
+                            <constraint firstItem="AQX-RR-h9m" firstAttribute="top" secondItem="v7e-XS-xPI" secondAttribute="bottom" constant="6" id="oBE-Ia-xc1"/>
+                            <constraint firstItem="jJD-Jw-EQN" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="vJm-hr-sSI"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="9RE-D8-aVU"/>
+                    <connections>
+                        <outlet property="answerField" destination="9jh-N7-cAS" id="N7h-XX-yJ8"/>
+                        <outlet property="bottom" destination="AeI-cM-uqb" id="4f8-n6-zbz"/>
+                        <outlet property="highScoreLabel" destination="dn8-QQ-31h" id="PgB-66-iow"/>
+                        <outlet property="isCorrectLabel" destination="d57-j3-4HO" id="km2-yM-DjR"/>
+                        <outlet property="mathQuestion" destination="sEB-fv-Sh1" id="LnR-es-7wx"/>
+                        <outlet property="numCorrectLabel" destination="2Jm-we-Agu" id="b52-2b-SrE"/>
+                        <outlet property="numTotalLabel" destination="4NP-ds-9OW" id="g6K-CM-LXg"/>
+                        <outlet property="numWrongLabel" destination="Lgy-wJ-eLb" id="EI7-hL-0QT"/>
+                        <outlet property="scoreLabel" destination="5H9-82-9qB" id="ZkZ-BK-Vjf"/>
+                        <outlet property="scoreSummaryButton" destination="jJD-Jw-EQN" id="prr-nq-RLd"/>
+                        <outlet property="scoreSummaryView" destination="05u-U5-MKu" id="7aL-V7-UPW"/>
+                        <outlet property="submitButton" destination="MdW-xv-gl8" id="mzg-VV-4R9"/>
+                        <outlet property="timeLabel" destination="ASa-Q4-v8f" id="W4l-sA-CD3"/>
+                        <outlet property="tryAgainButton" destination="XuK-Lw-12X" id="8zr-dz-Ujl"/>
+                        <segue destination="NDk-pE-V5b" kind="show" identifier="backHome" id="1E7-rc-eZr"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+                <view contentMode="scaleToFill" id="05u-U5-MKu" customClass="CustomView" customModule="Minute_Math" customModuleProvider="target">
+                    <rect key="frame" x="0.0" y="0.0" width="267" height="301"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <subviews>
+                        <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="Oph-bT-jZX">
+                            <rect key="frame" x="0.0" y="91" width="267" height="119.5"/>
+                            <subviews>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Correct: 0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2Jm-we-Agu">
+                                    <rect key="frame" x="0.0" y="0.0" width="267" height="26.5"/>
+                                    <fontDescription key="fontDescription" name="MuseoSansRounded-700" family="Museo Sans Rounded" pointSize="23"/>
+                                    <color key="textColor" red="0.98039215686274506" green="0.50588235294117645" blue="0.10588235294117647" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                    <nil key="highlightedColor"/>
+                                    <size key="shadowOffset" width="0.0" height="0.0"/>
+                                </label>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Wrong: 2" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Lgy-wJ-eLb">
+                                    <rect key="frame" x="0.0" y="46.5" width="267" height="26.5"/>
+                                    <fontDescription key="fontDescription" name="MuseoSansRounded-700" family="Museo Sans Rounded" pointSize="23"/>
+                                    <color key="textColor" red="0.98039215690000003" green="0.50588235290000005" blue="0.1058823529" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Accuracy: 0%" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4NP-ds-9OW">
+                                    <rect key="frame" x="0.0" y="93" width="267" height="26.5"/>
+                                    <fontDescription key="fontDescription" name="MuseoSansRounded-700" family="Museo Sans Rounded" pointSize="23"/>
+                                    <color key="textColor" red="0.98039215690000003" green="0.50588235290000005" blue="0.1058823529" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                            </subviews>
+                        </stackView>
+                    </subviews>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstItem="Oph-bT-jZX" firstAttribute="centerX" secondItem="05u-U5-MKu" secondAttribute="centerX" id="6Ux-0u-kSw"/>
+                        <constraint firstItem="Oph-bT-jZX" firstAttribute="centerY" secondItem="05u-U5-MKu" secondAttribute="centerY" id="89y-eW-Zdc"/>
+                        <constraint firstAttribute="trailing" secondItem="Oph-bT-jZX" secondAttribute="trailing" id="IRy-FB-xOk"/>
+                        <constraint firstItem="Oph-bT-jZX" firstAttribute="leading" secondItem="05u-U5-MKu" secondAttribute="leading" id="qSp-6o-cQe"/>
+                    </constraints>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                            <real key="value" value="20"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="color" keyPath="firstColor">
+                            <color key="value" red="1" green="0.81960784313725488" blue="0.4823529411764706" alpha="0.81464041095890416" colorSpace="custom" customColorSpace="displayP3"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="color" keyPath="secondColor">
+                            <color key="value" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                </view>
+            </objects>
+            <point key="canvasLocation" x="136.80000000000001" y="132.68365817091455"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="home-icon" width="93" height="86"/>
+        <image name="refresh-icon" width="36" height="45"/>
+    </resources>
+    <inferredMetricsTieBreakers>
+        <segue reference="RjA-do-0Ui"/>
+    </inferredMetricsTieBreakers>
+</document>
