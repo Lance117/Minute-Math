@@ -7,4 +7,9 @@ The goal is to see how many math problems you can solve in one minute. This game
 
 How the game is scored: a correct answer gives you one point. A wrong answer deducts one point (so that there's a penalty for lower accuracy).
 
-<img src="screenshots/main-menu.png" width=350>
+<img src="screenshots/main-menu.png" width=350>     <img src="screenshots/start-game.png" width=350>
+
+<img src="screenshots/correct-answer.png" width=350>     <img src="screenshots/incorrect-answer.png" width=350>
+
+
+<img src="screenshots/button-placement.png" width=350>     <img src="screenshots/score-subview.png" width=350>
