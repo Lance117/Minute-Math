@@ -2,7 +2,7 @@
 
 ### Main game code here: [game view controller](https://github.com/LanceSanity/Minute-Math/blob/master/Minute%20Math/ViewController.swift)
 
-<img src="demo.gif" width=375>
+
 
 ### Description
 "Minute Math" is an iOS math game for elementary school students. There are five levels: 1st through 5th grade. Math problems are randomly generated for the appropriate grade level.
