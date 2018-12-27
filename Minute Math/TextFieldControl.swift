@@ -50,11 +50,11 @@ class TextFieldControl: UITextField {
         setRightImage()
         
         // Placeholder text color
-        attributedPlaceholder = NSAttributedString(string: placeholder != nil ?  placeholder! : "", attributes:[NSAttributedStringKey.foregroundColor: tintColor])
+        attributedPlaceholder = NSAttributedString(string: placeholder != nil ?  placeholder! : "", attributes:[NSAttributedString.Key.foregroundColor: tintColor])
     }
     
     func setLeftImage() {
-        leftViewMode = UITextFieldViewMode.always
+        leftViewMode = UITextField.ViewMode.always
         var view: UIView
         
         if let image = leftImage {
@@ -65,7 +65,7 @@ class TextFieldControl: UITextField {
             
             var width = imageView.frame.width + leftPadding
             
-            if borderStyle == UITextBorderStyle.none || borderStyle == UITextBorderStyle.line {
+            if borderStyle == UITextField.BorderStyle.none || borderStyle == UITextField.BorderStyle.line {
                 width += 5
             }
             
@@ -79,7 +79,7 @@ class TextFieldControl: UITextField {
     }
     
     func setRightImage() {
-        rightViewMode = UITextFieldViewMode.always
+        rightViewMode = UITextField.ViewMode.always
         
         var view: UIView
         
@@ -91,7 +91,7 @@ class TextFieldControl: UITextField {
             
             var width = imageView.frame.width + rightPadding
             
-            if borderStyle == UITextBorderStyle.none || borderStyle == UITextBorderStyle.line {
+            if borderStyle == UITextField.BorderStyle.none || borderStyle == UITextField.BorderStyle.line {
                 width += 5
             }
             

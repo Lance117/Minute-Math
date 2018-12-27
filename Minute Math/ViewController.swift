@@ -52,8 +52,8 @@ class ViewController: UIViewController, UITextFieldDelegate {
         answerField.delegate = self
         
         // Keyboard observers
-        NotificationCenter.default.addObserver(self, selector: #selector(keyboardWillShow), name:NSNotification.Name.UIKeyboardWillShow, object: nil)
-        NotificationCenter.default.addObserver(self, selector: #selector(keyboardWillHide), name:NSNotification.Name.UIKeyboardWillHide, object: nil)
+        NotificationCenter.default.addObserver(self, selector: #selector(keyboardWillShow), name:UIResponder.keyboardWillShowNotification, object: nil)
+        NotificationCenter.default.addObserver(self, selector: #selector(keyboardWillHide), name:UIResponder.keyboardWillHideNotification, object: nil)
         
         // Do any additional setup after loading the view, typically from a nib.
         submitButton.isHidden = false
@@ -152,7 +152,7 @@ class ViewController: UIViewController, UITextFieldDelegate {
         numCorrectLabel.text = "Correct: \(correct)"
         numWrongLabel.text = "Wrong: \(wrong)"
         numTotalLabel.text = "Accuracy: \(total)%"
-        UIView.transition(with: self.view, duration: 0.2, options: UIViewAnimationOptions.transitionCrossDissolve, animations: {self.view.addSubview(self.scoreSummaryView)}, completion: nil)
+        UIView.transition(with: self.view, duration: 0.2, options: UIView.AnimationOptions.transitionCrossDissolve, animations: {self.view.addSubview(self.scoreSummaryView)}, completion: nil)
         scoreSummaryView.center = self.view.center
     }
     
@@ -267,7 +267,7 @@ class ViewController: UIViewController, UITextFieldDelegate {
     
     @objc func keyboardWillShow(notification:NSNotification){
         var userInfo = notification.userInfo!
-        var keyboardFrame:CGRect = (userInfo[UIKeyboardFrameBeginUserInfoKey] as! NSValue).cgRectValue
+        var keyboardFrame:CGRect = (userInfo[UIResponder.keyboardFrameBeginUserInfoKey] as! NSValue).cgRectValue
         keyboardFrame = self.view.convert(keyboardFrame, from: nil)
         
         bottom.constant = keyboardFrame.size.height + 1
