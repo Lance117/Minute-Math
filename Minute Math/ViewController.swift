@@ -89,10 +89,18 @@ class ViewController: UIViewController, UITextFieldDelegate {
         }
     }
 
-    //MARK: UITextFieldDelegate
-    func textFieldDidBeginEditing(_ textField: UITextField) {
-        submitButton.isUserInteractionEnabled = true
-        submitButton.isEnabled = true
+    //MARK: UITextFieldDelegate    
+    func textField(_ textField: UITextField, shouldChangeCharactersIn range: NSRange, replacementString string: String) -> Bool {
+        
+        let text = (textField.text! as NSString).replacingCharacters(in: range, with: string)
+        if !text.isEmpty {
+            submitButton.isUserInteractionEnabled = true
+            submitButton.isEnabled = true
+        } else {
+            submitButton.isUserInteractionEnabled = false
+            submitButton.isEnabled = false
+        }
+        return true
     }
     
     // MARK: Actions
